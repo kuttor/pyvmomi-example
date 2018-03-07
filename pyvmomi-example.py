@@ -12,15 +12,16 @@ Options:
 
 """
 
-__author__     = "Andrew Kuttor"
-__credits__    = "Andrew Kuttor"
-__email__      = "andrew.kuttor@dimensiondata.com"
-__status__     = "Prototype"
-__version__    = "0.0.1"
-__maintainer__ = "Andrew Kuttor
+__author__ = "Andrew Kuttor"
+__credits__ = "Andrew Kuttor"
+__email__ = "andrew.kuttor@dimensiondata.com"
+__status__ = "Prototype"
+__version__ = "0.0.1"
+__maintainer__ = "Andrew Kuttor"
 
 from pyVim.connect import SmartConnect as connect
 from pyVim.connect import Disconnect as kill
+
 
 def list_vms():
     datacenter = c.content.rootFolder.childEntity[0]
@@ -30,9 +31,8 @@ def list_vms():
         print(vm.name)
 
 
-
-def main
-    creds={host, user, pwd}
+def main(host, user, pwd):
+    creds = {host, user, pwd}
 
     connect(**creds)
     list_vms()
@@ -41,16 +41,3 @@ def main
 
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
